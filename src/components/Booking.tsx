@@ -5,20 +5,13 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Calendar, Clock, User, Phone, Mail, MessageSquare } from "lucide-react";
-
 const Booking = () => {
-  return (
-    <section id="agendar" className="py-20">
+  return <section id="agendar" className="py-20">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Agende seu Horário
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Reserve seu horário de forma rápida e prática. Nossa equipe entrará 
-            em contato para confirmar todos os detalhes.
-          </p>
+          
+          
         </div>
 
         <div className="max-w-4xl mx-auto">
@@ -38,11 +31,7 @@ const Booking = () => {
                       <User className="h-4 w-4" />
                       <span>Nome Completo</span>
                     </Label>
-                    <Input 
-                      id="name" 
-                      placeholder="Digite seu nome"
-                      className="gradient-subtle border-border/50"
-                    />
+                    <Input id="name" placeholder="Digite seu nome" className="gradient-subtle border-border/50" />
                   </div>
 
                   <div>
@@ -50,11 +39,7 @@ const Booking = () => {
                       <Phone className="h-4 w-4" />
                       <span>Telefone</span>
                     </Label>
-                    <Input 
-                      id="phone" 
-                      placeholder="(11) 99999-9999"
-                      className="gradient-subtle border-border/50"
-                    />
+                    <Input id="phone" placeholder="(11) 99999-9999" className="gradient-subtle border-border/50" />
                   </div>
 
                   <div>
@@ -62,12 +47,7 @@ const Booking = () => {
                       <Mail className="h-4 w-4" />
                       <span>E-mail</span>
                     </Label>
-                    <Input 
-                      id="email" 
-                      type="email"
-                      placeholder="seu@email.com"
-                      className="gradient-subtle border-border/50"
-                    />
+                    <Input id="email" type="email" placeholder="seu@email.com" className="gradient-subtle border-border/50" />
                   </div>
                 </div>
 
@@ -97,10 +77,7 @@ const Booking = () => {
                       <Calendar className="h-4 w-4" />
                       <span>Data Preferida</span>
                     </Label>
-                    <Input 
-                      type="date"
-                      className="gradient-subtle border-border/50"
-                    />
+                    <Input type="date" className="gradient-subtle border-border/50" />
                   </div>
 
                   <div>
@@ -132,11 +109,7 @@ const Booking = () => {
                   <MessageSquare className="h-4 w-4" />
                   <span>Observações (Opcional)</span>
                 </Label>
-                <Textarea 
-                  id="notes"
-                  placeholder="Conte-nos sobre suas preferências, inspirações ou qualquer detalhe importante..."
-                  className="gradient-subtle border-border/50 min-h-[100px]"
-                />
+                <Textarea id="notes" placeholder="Conte-nos sobre suas preferências, inspirações ou qualquer detalhe importante..." className="gradient-subtle border-border/50 min-h-[100px]" />
               </div>
 
               {/* Policies */}
@@ -165,8 +138,6 @@ const Booking = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Booking;

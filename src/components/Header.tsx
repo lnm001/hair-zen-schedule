@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Scissors, Phone, MapPin } from "lucide-react";
-
 const Header = () => {
-  return (
-    <header className="gradient-subtle border-b border-border/50 sticky top-0 z-50 backdrop-blur-sm">
+  return <header className="gradient-subtle border-b border-border/50 sticky top-0 z-50 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -12,7 +10,7 @@ const Header = () => {
               <Scissors className="h-6 w-6 text-primary-foreground" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-foreground">Salon Elegância</h1>
+              <h1 className="text-xl font-bold text-foreground">Mota Cabeleireiro</h1>
               <p className="text-xs text-muted-foreground">Beleza & Estilo</p>
             </div>
           </div>
@@ -42,8 +40,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default Header;
